@@ -1,6 +1,7 @@
 package com.jefy.todoapi.exceptions;
 
 import com.jefy.todoapi.dtos.ApiResponse;
+import lombok.Getter;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -18,6 +19,7 @@ import static org.springframework.http.HttpStatus.*;
  * @Email joph.e.f.yamba@gmail.com
  * @Since 10/05/2024
  */
+@Getter
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
@@ -77,4 +79,5 @@ public class GlobalExceptionHandler {
                         .build()
         );
     }
+
 }

@@ -1,13 +1,11 @@
 package com.jefy.todoapi.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.jefy.todoapi.enums.Status;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDateTime;
-import java.util.Collection;
 
 /**
  * @Author JefYamba
